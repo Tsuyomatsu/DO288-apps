@@ -14,11 +14,11 @@ echo "---> Installing application source"
 cp -Rf /tmp/src/*.html ./
 
 DATE=`date "+%Y-%m-%d"`
-TEST=`env`
+TEST=`env | grep PATH`
 
 echo "---> Creating info page"
 echo "Page built on hogehoge $DATE" >> ./info.html
-echo "$TEST" >> ./info.html
+echo "PATH $TEST" >> ./info.html
 echo "Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info.html
 
 ######## CUSTOMIZATION ENDS HERE ############
