@@ -14,7 +14,7 @@ echo "---> Installing application source"
 cp -Rf /tmp/src/*.html ./
 
 DATE=`date "+%Y-%m-%d"`
-TEST=env
+TEST=`env`
 
 echo "---> Creating info page"
 echo "Page built on hogehoge $DATE" >> ./info.html
