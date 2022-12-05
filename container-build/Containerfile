@@ -1,5 +1,6 @@
 # Use the httpd-parent image as base
 
+<<<<<<< HEAD
 FROM quay.io/tsuyoshi_matsuo/httpd-parent
 
 EXPOSE 8080
@@ -11,3 +12,5 @@ RUN chgrp -R 0 /var/log/httpd /var/run/httpd && \
     chmod -R g=u /var/log/httpd /var/run/httpd
 
 USER 1001
+=======
+>>>>>>> d37fd47bc549742b145ddbc92566df8da6053220
